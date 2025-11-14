@@ -546,6 +546,19 @@
       font-weight: 500;
     }
 
+    .episode-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      margin-top: 0.25rem;
+    }
+
+    .episode-link-secondary {
+      font-size: 0.82rem;
+      color: #1d4ed8;
+      font-weight: 500;
+    }
+
     /* المشاركة */
     .participate-layout {
       display: grid;
@@ -627,6 +640,24 @@
       background: #22c55e;
     }
 
+    /* بطاقات الرعاية */
+    .sponsorship-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .sponsorship-tag {
+      display: inline-block;
+      font-size: 0.8rem;
+      color: #1d4ed8;
+      background: #eff6ff;
+      padding: 0.15rem 0.6rem;
+      border-radius: 999px;
+      margin-bottom: 0.4rem;
+    }
+
+    /* الفوتر */
     footer {
       border-top: 1px solid #e5e7eb;
       padding: 1.5rem 1.25rem 2.1rem;
@@ -756,12 +787,15 @@
           <a href="#vision2030-link">ارتباطه برؤية 2030</a>
           <a href="#episodes">الحلقات</a>
           <a href="#participate">قدّم حلك</a>
+          <a href="#collaborate">التعاون مع الفريق</a>
+          <a href="#solution-partner">شراكات الحلول</a>
+          <a href="#sponsorship">الرعايات</a>
           <a href="#contact">تواصل معنا</a>
         </div>
         <div class="nav-actions">
           <a href="#episodes" class="btn-nav btn-nav-primary">مشاهدة الحلقات</a>
           <a href="#" class="btn-nav btn-nav-outline" title="سيتم إضافة الرابط عند إطلاق القناة">
-            قناة يوتيوب (قريباً)
+            قناة يوتيوب (قريبًا)
           </a>
         </div>
       </nav>
@@ -834,7 +868,7 @@
               <strong>بودكاست حصيف</strong> هو منصة مرئية متخصصة تعرض الحلول
               والمقترحات العملية التي يمكن تنفيذها لتعزيز التنمية الوطنية. يستضيف
               نخبة من القيادات والمتخصصين وروّاد الأعمال وأصحاب المبادرات؛ لعرض
-              أفكارهم بوصفها حلولاً قابلة للتطبيق تسهم في تحقيق مستهدفات
+              أفكارهم بوصفها حلولًا قابلة للتطبيق تسهم في تحقيق مستهدفات
               <strong>رؤية المملكة 2030</strong>.
             </p>
             <div class="pill-row">
@@ -845,7 +879,7 @@
           </div>
 
           <div class="card">
-            <h3 class="card-title">تسمية حصيف</h3>
+            <h3 class="card-title">ما معنى حصيف؟</h3>
             <p>
               كلمة <strong>حصيف</strong> هي اختصار لعبارة:
               <strong>(حلول – صائبة – يُقترح – فعلها)</strong>، ليكون البودكاست
@@ -953,7 +987,7 @@
             <div class="vision-text">
               حلقات تستعرض حلولاً ومبادرات لتحسين البيئة الحضرية، والأنشطة
               الثقافية والرياضية والترفيهية، والخدمات التي تجعل حياة الأفراد
-              والأسر أكثر جودة وازدهارً.
+              والعائلات أكثر جودة وازدهاراً.
             </div>
           </div>
 
@@ -1045,7 +1079,12 @@
                 حوار مع ضيف مختص يشرح أدوات تحويل الأفكار المجتمعية إلى مبادرات
                 مؤثرة، ودور القطاعات المختلفة في تمكينها.
               </p>
-              <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+              <div class="episode-actions">
+                <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+                <a href="#solution-partner" class="episode-link-secondary">
+                  أرغب في الاستفادة من هذا الحل باسم جهتي
+                </a>
+              </div>
             </div>
           </article>
 
@@ -1065,7 +1104,12 @@
                 قصة ملهمة لرائد أعمال سعودي وكيف تحوّلت فكرته إلى مشروع يخدم أحد
                 برامج رؤية 2030.
               </p>
-              <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+              <div class="episode-actions">
+                <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+                <a href="#solution-partner" class="episode-link-secondary">
+                  أرغب في التواصل لدراسة هذا الحل
+                </a>
+              </div>
             </div>
           </article>
 
@@ -1085,13 +1129,18 @@
                 نقاش حول نماذج شراكة ناجحة وكيف يمكن تعميمها عبر مبادرات
                 وحلول جديدة.
               </p>
-              <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+              <div class="episode-actions">
+                <a href="#" class="episode-link">مشاهدة الحلقة على يوتيوب (لاحقاً)</a>
+                <a href="#solution-partner" class="episode-link-secondary">
+                  جهتنا مهتمة ببناء شراكة حول هذا المحور
+                </a>
+              </div>
             </div>
           </article>
         </div>
       </section>
 
-      <!-- المشاركة في البودكاست -->
+      <!-- المشاركة في البودكاست (أصحاب الحلول) -->
       <section id="participate">
         <div class="section-header">
           <h2 class="section-title">قدّم حلك لاستضافتك في بودكاست حصيف</h2>
@@ -1103,11 +1152,13 @@
 
         <div class="participate-layout">
           <div class="card">
-            <h3 class="card-title">نموذج طلب المشاركة</h3>
+            <h3 class="card-title">نموذج طلب المشاركة كضيف</h3>
             <p style="font-size: 0.92rem; color: #4b5563; margin-bottom: 0.75rem;">
+              يمكنك في مرحلة لاحقة ربط هذا النموذج بخادم أو خدمة مثل Google Forms أو
+              أي نظام إدارة يناسبك. النموذج هنا لأغراض العرض فقط.
             </p>
 
-            <form onsubmit="event.preventDefault(); alert('سيتم لاحقاً ربط النموذج بخدمة حقيقية لاستقبال الطلبات.');">
+            <form onsubmit="event.preventDefault(); alert('سيتم لاحقًا ربط النموذج بخدمة حقيقية لاستقبال الطلبات.');">
               <div>
                 <label for="name">الاسم الكامل</label>
                 <input id="name" type="text" placeholder="اكتب اسمك الثلاثي" required />
@@ -1197,6 +1248,152 @@
         </div>
       </section>
 
+      <!-- التعاون مع فريق البودكاست -->
+      <section id="collaborate">
+        <div class="section-header">
+          <h2 class="section-title">فرص التعاون مع فريق بودكاست حصيف</h2>
+          <p class="section-subtitle">
+            إذا كان لديك شغف بالإعلام التنموي، أو مهارات في الإنتاج، البحث، أو إدارة الشراكات، يمكنك الترشح للتعاون مع فريق البودكاست.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">نموذج الرغبة في التعاون</h3>
+          <p style="font-size: 0.92rem; color: #4b5563; margin-bottom: 0.75rem;">
+            هذا النموذج مخصص للأفراد الراغبين في دعم تشغيل البودكاست (تطوعاً أو بمقابل)، ويمكن لاحقاً ربطه بنظام إدارة متكامل.
+          </p>
+
+          <form onsubmit="event.preventDefault(); alert('سيتم لاحقًا ربط نموذج التعاون بنظام استقبال طلبات متكامل.');">
+            <div>
+              <label for="collab-name">الاسم الكامل</label>
+              <input id="collab-name" type="text" placeholder="اكتب اسمك الثلاثي" required />
+            </div>
+
+            <div>
+              <label for="collab-email">البريد الإلكتروني</label>
+              <input id="collab-email" type="email" placeholder="example@email.com" required />
+            </div>
+
+            <div>
+              <label for="collab-skill">مجال المهارة / التخصص</label>
+              <select id="collab-skill" required>
+                <option value="">اختر من القائمة</option>
+                <option>إعداد محتوى وحلقات</option>
+                <option>البحث والتحليل</option>
+                <option>التسويق وإدارة المنصات</option>
+                <option>المونتاج والإنتاج المرئي</option>
+                <option>التصميم الجرافيكي والهوية البصرية</option>
+                <option>العلاقات والشراكات والرعايات</option>
+                <option>تنسيق وضبط العمليات</option>
+                <option>أخرى</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="collab-hours">عدد الساعات المتاحة أسبوعياً (تقديري)</label>
+              <input id="collab-hours" type="text" placeholder="مثال: 4 ساعات أسبوعياً" />
+            </div>
+
+            <div>
+              <label for="collab-type">نوع التعاون المفضل</label>
+              <select id="collab-type" required>
+                <option value="">اختر من القائمة</option>
+                <option>تطوعي</option>
+                <option>مدفوع</option>
+                <option>بحسب الاتفاق / مشروع بمشروع</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="collab-note">كيف تحب أن تسهم في بودكاست حصيف؟</label>
+              <textarea id="collab-note" placeholder="اشرح باختصار كيف ترى دورك في دعم البودكاست."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="justify-content:center;">
+              إرسال طلب التعاون
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <!-- شراكات الحلول مع الجهات -->
+      <section id="solution-partner">
+        <div class="section-header">
+          <h2 class="section-title">للجهات الراغبة في الاستفادة من الحلول المطروحة</h2>
+          <p class="section-subtitle">
+            إذا كانت جهتك مهتمة بدراسة أو تبنّي حل طُرح في إحدى حلقات بودكاست حصيف، يمكنكم تعبئة النموذج التالي ليتم التواصل معكم.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3 class="card-title">نموذج اهتمام جهة بحل أو حلقة</h3>
+          <p style="font-size: 0.92rem; color:#4b5563; margin-bottom:0.75rem;">
+            يمكن الوصول لهذا النموذج أيضاً من خلال زر <strong>“أرغب في الاستفادة من هذا الحل”</strong> الموجود أسفل كل حلقة.
+          </p>
+
+          <form onsubmit="event.preventDefault(); alert('سيتم لاحقًا ربط نموذج شراكات الحلول بنظام متابعة مخصص للجهات.');">
+            <div>
+              <label for="entity-type">نوع الجهة</label>
+              <select id="entity-type" required>
+                <option value="">اختر من القائمة</option>
+                <option>وزارة / هيئة حكومية</option>
+                <option>جهة شبه حكومية</option>
+                <option>شركة / منشأة قطاع خاص</option>
+                <option>جمعية / مؤسسة غير ربحية</option>
+                <option>جامعة / جهة تعليمية</option>
+                <option>جهة مانحة / ذراع مسؤولية اجتماعية</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="entity-name">اسم الجهة</label>
+              <input id="entity-name" type="text" placeholder="مثال: وزارة / هيئة / شركة / جمعية..." required />
+            </div>
+
+            <div>
+              <label for="episode-ref">اسم أو رقم الحلقة / الحل محل الاهتمام</label>
+              <input id="episode-ref" type="text" placeholder="مثال: الحلقة 01 – الحلول المجتمعية كشريك في تحقيق رؤية 2030" required />
+            </div>
+
+            <div>
+              <label for="interest-type">نوع الاهتمام</label>
+              <select id="interest-type" required>
+                <option value="">اختر من القائمة</option>
+                <option>دراسة تطبيق الحل داخل الجهة</option>
+                <option>إطلاق مشروع تجريبي (Pilot) حول الحل</option>
+                <option>شراكة طويلة المدى مع صاحب الحل</option>
+                <option>تمويل / رعاية لتوسيع نطاق الحل</option>
+                <option>استشارة أولية للتعرّف على الحل بشكل أعمق</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="entity-contact">اسم مسؤول التواصل في الجهة</label>
+              <input id="entity-contact" type="text" placeholder="الاسم الوظيفي لمسؤول التواصل" required />
+            </div>
+
+            <div>
+              <label for="entity-phone">رقم الجوال</label>
+              <input id="entity-phone" type="text" placeholder="مثال: 05xxxxxxxx" />
+            </div>
+
+            <div>
+              <label for="entity-email">البريد الإلكتروني الرسمي</label>
+              <input id="entity-email" type="email" placeholder="official@organization.sa" required />
+            </div>
+
+            <div>
+              <label for="entity-notes">ملاحظات أو توقعات الشراكة</label>
+              <textarea id="entity-notes" placeholder="اشرح بإيجاز ما الذي تهدف له جهتك من دراسة أو تبنّي هذا الحل."></textarea>
+            </div>
+
+            <button type="submit" class="btn-primary" style="justify-content:center;">
+              إرسال طلب الشراكة حول الحل
+            </button>
+          </form>
+        </div>
+      </section>
+
       <!-- الشركاء -->
       <section id="partners">
         <div class="section-header">
@@ -1230,13 +1427,139 @@
         </div>
       </section>
 
+      <!-- الرعايات وباقات الدعم -->
+      <section id="sponsorship">
+        <div class="section-header">
+          <h2 class="section-title">الرعايات وباقات دعم بودكاست حصيف</h2>
+          <p class="section-subtitle">
+            يمكن للجهات الراغبة في تعظيم أثرها في المسؤولية الاجتماعية أو إبراز مبادراتها التنموية، رعاية البودكاست بالكامل أو مواسم محددة أو حلقات بعينها.
+          </p>
+        </div>
+
+        <div class="sponsorship-grid">
+          <div class="card">
+            <span class="sponsorship-tag">رعاية استراتيجية</span>
+            <h3 class="card-title">الشريك الاستراتيجي للبودكاست</h3>
+            <p style="font-size:0.9rem; color:#4b5563;">
+              شراكة طويلة المدى تغطي البودكاست ككل، تشمل:
+            </p>
+            <ul style="margin-top:0.4rem; padding-right:1.1rem; font-size:0.9rem; color:#4b5563;">
+              <li>ظهور شعار الجهة في مقدمة ونهاية الحلقات.</li>
+              <li>ذكر الجهة كشريك استراتيجي في المواد الإعلامية.</li>
+              <li>أولوية في اقتراح محاور متوافقة مع استراتيجيتها.</li>
+              <li>صفحة تعريفية مخصصة للشريك داخل موقع البودكاست.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="sponsorship-tag">رعاية موسم / محور</span>
+            <h3 class="card-title">شريك محتوى لموسم أو سلسلة حلقات</h3>
+            <p style="font-size:0.9rem; color:#4b5563;">
+              رعاية موسم يركز على محور محدد (مثل: تمكين الشباب، المسؤولية الاجتماعية، التحول الرقمي)، وتشمل:
+            </p>
+            <ul style="margin-top:0.4rem; padding-right:1.1rem; font-size:0.9rem; color:#4b5563;">
+              <li>شعار الجهة في بداية ونهاية حلقات الموسم.</li>
+              <li>إبراز مبادرات الجهة ضمن المحتوى المرتبط بالمحور.</li>
+              <li>ذكر الجهة كشريك محتوى في المنصات الرقمية.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="sponsorship-tag">رعاية حلقة</span>
+            <h3 class="card-title">راعي حلقة أو حلقة خاصة</h3>
+            <p style="font-size:0.9rem; color:#4b5563;">
+              رعاية حلقة واحدة أو حلقة خاصة، وتشمل:
+            </p>
+            <ul style="margin-top:0.4rem; padding-right:1.1rem; font-size:0.9rem; color:#4b5563;">
+              <li>شعار الجهة في بداية ونهاية الحلقة.</li>
+              <li>شكر لفظي أثناء الحلقة.</li>
+              <li>ذكر الجهة كـ "راعي هذه الحلقة" في الموقع ومنصات النشر.</li>
+            </ul>
+          </div>
+
+          <div class="card">
+            <span class="sponsorship-tag">رعاية نوعية</span>
+            <h3 class="card-title">شريك دعم تقني أو إنتاجي</h3>
+            <p style="font-size:0.9rem; color:#4b5563;">
+              رعايات غير مالية (استوديو، إنتاج، تصميم، تقنيات)، وتشمل:
+            </p>
+            <ul style="margin-top:0.4rem; padding-right:1.1rem; font-size:0.9rem; color:#4b5563;">
+              <li>ذكر الجهة كشريك تقني أو إنتاجي.</li>
+              <li>إبراز دورها في تمكين إنتاج الحلقات.</li>
+              <li>إدراج شعارها في قسم الشركاء على الموقع.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:1.5rem;">
+          <h3 class="card-title">نموذج طلب معلومات الرعاية</h3>
+          <p style="font-size:0.92rem; color:#4b5563; margin-bottom:0.75rem;">
+            يمكن تزويد الجهات المهتمة بملف تعريفي تفصيلي بباقات الرعاية، بناءً على البيانات التالية:
+          </p>
+
+          <form onsubmit="event.preventDefault(); alert('سيتم لاحقًا ربط نموذج الرعاية بنظام متابعة مخصص للرعاة.');">
+            <div>
+              <label for="sponsor-entity">اسم الجهة</label>
+              <input id="sponsor-entity" type="text" placeholder="اسم الجهة الراعية" required />
+            </div>
+
+            <div>
+              <label for="sponsor-type">نوع الجهة</label>
+              <select id="sponsor-type" required>
+                <option value="">اختر من القائمة</option>
+                <option>شركة / منشأة قطاع خاص</option>
+                <option>جهة مانحة / ذراع مسؤولية اجتماعية</option>
+                <option>مؤسسة غير ربحية</option>
+                <option>جامعة / جهة تعليمية</option>
+                <option>جهة حكومية أو شبه حكومية</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="sponsor-package">نوع الرعاية المرغوبة</label>
+              <select id="sponsor-package" required>
+                <option value="">اختر من القائمة</option>
+                <option>رعاية استراتيجية للبودكاست بالكامل</option>
+                <option>رعاية موسم / محور محدد</option>
+                <option>رعاية حلقة واحدة أو حلقات محددة</option>
+                <option>رعاية نوعية (تقنية / إنتاجية / تصميم...)</option>
+              </select>
+            </div>
+
+            <div>
+              <label for="sponsor-goals">ما هي أهداف جهتك من الرعاية؟</label>
+              <textarea id="sponsor-goals" placeholder="مثال: تعظيم أثر المسؤولية الاجتماعية، إبراز مبادرات الجهة، الوصول إلى شريحة الشباب..."></textarea>
+            </div>
+
+            <div>
+              <label for="sponsor-contact-name">اسم مسؤول التواصل</label>
+              <input id="sponsor-contact-name" type="text" placeholder="اسم مسؤول ملف الرعاية" required />
+            </div>
+
+            <div>
+              <label for="sponsor-contact-email">البريد الإلكتروني</label>
+              <input id="sponsor-contact-email" type="email" placeholder="official@organization.sa" required />
+            </div>
+
+            <div>
+              <label for="sponsor-contact-phone">رقم الجوال</label>
+              <input id="sponsor-contact-phone" type="text" placeholder="مثال: 05xxxxxxxx" />
+            </div>
+
+            <button type="submit" class="btn-primary" style="justify-content:center;">
+              إرسال طلب معلومات الرعاية
+            </button>
+          </form>
+        </div>
+      </section>
+
       <!-- تواصل -->
       <section id="contact">
         <div class="section-header">
           <h2 class="section-title">تواصل معنا</h2>
           <p class="section-subtitle">
             للاستفسارات الإعلامية، الرعايات، أو الشراكات، يمكن التواصل عبر القنوات
-            التالية .
+            التالية (عدّل البيانات بما يناسبك).
           </p>
         </div>
 
@@ -1269,6 +1592,9 @@
           <a href="#vision2030-link">الرؤية 2030</a>
           <a href="#episodes">الحلقات</a>
           <a href="#participate">قدّم حلك</a>
+          <a href="#collaborate">التعاون مع الفريق</a>
+          <a href="#solution-partner">شراكات الحلول</a>
+          <a href="#sponsorship">الرعايات</a>
           <a href="#contact">تواصل معنا</a>
         </div>
       </div>
